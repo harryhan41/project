@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div>
+    <a routerLink="/user/{{user_id}}/course/{{web_id}}/page" class="navbar-brand" href="#"><i
+      class="fas fa-angle-left"></i></a>
+    <a class="navbar-brand text-black">Edit Pages</a>
+  </div>
+</nav>
+<div class="container">
+  <form>
+    <div class="form-group">
+      <label for="name"><b>Stuent Id</b></label>
+      <input [(ngModel)]="course.studentId"
+             name="name"
+             type="text"
+             class="form-control"
+             id="name"
+             placeholder="Blog Post"/>
+    </div>
+    <div class="form-group">
+      <label for="title"><b>Grade</b></label>
+      <input [(ngModel)]="course.grade"
+             name="description"
+             type="text"
+             class="form-control"
+             id="title"
+             placeholder="Page Title"/>
+    </div>
+    <a (click)="updatePage()" class="btn btn-success btn-block text-white">
+      Update
+    </a>
+  </form>
+</div>
+<nav class="navbar fixed-bottom navbar-light bg-light">
+  <a routerLink="/user/{{user_id}}" class="navbar-brand ml-auto" href="#"><i class="fas fa-user"></i></a>
+</nav>

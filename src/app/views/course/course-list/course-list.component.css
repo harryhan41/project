@@ -1,0 +1,22 @@
+.navbar {
+  background: steelblue;
+  font-weight: bold;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.fa-plus {
+  color: white;
+}
+
+.fa-user {
+  color: white;
+}
+
+.row {
+  padding-top: 30px;
+}
+

@@ -1,0 +1,25 @@
+.fas {
+  color: black;
+}
+
+.fa-check {
+  cursor: pointer;
+}
+
+.fa-user {
+  color: steelblue;
+}
+
+.form-group {
+  padding-top: 30px;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.row {
+  padding-top: 30px;
+}
+

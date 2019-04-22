@@ -1,0 +1,30 @@
+<nav class="navbar">
+  <div class="float-left">
+    <a routerLink="/user/{{userId}}" class="navbar-brand" href="#"><i class="fas fa-angle-left"></i></a>
+    <a class="navbar-brand text-white">Courses</a>
+  </div>
+  <a class="navbar-brand float-right" routerLink="/user/{{userId}}/course/new">
+    <i class="fas fa-plus"></i>
+  </a>
+</nav>
+
+<div class="container">
+  <ul class="list-group cl-list-group-borderless">
+    <li class="list-group-item cl-list-item-borderless" *ngFor="let course of courses">
+      <a *ngIf="show" routerLink="/user/{{userId}}/course/{{course._id}}/edit"><span
+        class="fas fa-cog float-right"></span></a>
+      <a *ngIf="show" routerLink="/user/{{userId}}/course/{{course._id}}/{{name}}/page">{{course.name}}</a>
+      <a *ngIf="!show">{{course.name}}</a>
+      <a *ngIf="!show" class="float-right">{{course.grade}}</a>
+    </li>
+  </ul>
+</div>
+
+<nav class="navbar fixed-bottom">
+  <div class="container-fluid">
+    <a routerLink="/user/{{userId}}" class="ml-auto">
+      <i class="fas fa-user"></i>
+    </a>
+  </div>
+</nav>
+

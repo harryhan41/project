@@ -1,0 +1,42 @@
+<nav class="navbar navbar-expand-lg navbar-fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand text-white">Profile</a>
+    <a (click)="UpdateUser()" class="navbar-link navbar-text float-right">
+      <i class="fas fa-check"></i></a>
+  </div>
+</nav>
+
+<div class="container">
+  <h1>Profile</h1>
+
+  <div class="form-group">
+    <label for="username"><b>Username</b></label>
+    <input [(ngModel)]="user.username" type="text" class="form-control" id="username"
+           placeholder="username"/>
+  </div>
+  <div class="form-group">
+    <label for="email"><b>Email</b></label>
+    <input [(ngModel)]="user.email" type="email" class="form-control" id="email"
+           placeholder="abcdefg@xxx.com"/>
+  </div>
+  <div class="form-group">
+    <label for="firstname"><b>First Name</b></label>
+    <input [(ngModel)]="user.firstName" type="text" class="form-control" id="firstname"
+           placeholder="first name"/>
+  </div>
+  <div class="form-group">
+    <label for="lastname"><b>Last Name</b></label>
+    <input [(ngModel)]="user.lastName" type="text" class="form-control" id="lastname"
+           placeholder="last name"/>
+  </div>
+  <a routerLink="/user/{{user._id}}/course" class="btn btn-primary btn-block">Courses</a>
+  <a class="btn btn-danger btn-block" (click)="logout()" routerLink="/login">Logout</a>
+</div>
+
+<nav class="navbar fixed-bottom">
+  <div class="container-fluid">
+    <a class="ml-auto">
+      <i class="fas fa-user"></i>
+    </a>
+  </div>
+</nav>

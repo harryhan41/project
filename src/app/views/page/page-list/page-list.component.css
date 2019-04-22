@@ -1,0 +1,27 @@
+.col-sm-10 {
+  color: steelblue;
+  font-weight: bold;
+}
+
+.fas {
+  color: black;
+}
+
+.fa-user {
+  color: steelblue;
+  float: right;
+}
+
+.fa-cog {
+  color: steelblue;
+}
+
+.navbar-brand {
+  color: white;
+  font-weight: bold;
+}
+
+.row {
+  padding-top: 30px;
+}
+
