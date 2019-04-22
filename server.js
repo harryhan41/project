@@ -35,8 +35,7 @@ app.set("port", port);
 const server = http.createServer(app);
 server.listen(port, () => console.log("Running on port 3100"));
 
-// link to database from local or cloud
-// var connectionString = "mongodb://127.0.0.1:27017/webdev";
+
 var connectionString = "mongodb://webdevjq1:webdevjq1@ds145456.mlab.com:45456/heroku_z8c5n66p";
 
 var mongoose = require("mongoose");
