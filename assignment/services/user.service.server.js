@@ -44,6 +44,7 @@ var facebookConfig = {
   callbackURL: process.env.FACEBOOK_CALLBACK_URL,
 };
 
+// test
 // var facebookConfig = {
 //   clientID     : 831729373846939,
 //   clientSecret : 316908848,
